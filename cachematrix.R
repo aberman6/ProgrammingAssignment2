@@ -4,7 +4,7 @@
 
 ## creates a "matrix" object that can cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
-
+  
   i <- NULL
   #set the value of the matrix
   set <- function(y) {
@@ -22,8 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
   
   #creates list
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
+  
 }
-
 
 ## finds the inverse of a "matrix" object (defined in makeCacheMatrix)
 ## if the inverse has already been calculated, retrieves the cached inversed matrix
